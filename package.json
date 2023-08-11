@@ -1,0 +1,28 @@
+{
+  "name": "fast_ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "./.npm.scripts/ci/clean.sh",
+    "build": "npm run clean && tsc -p .",
+    "start": "node ./dist/index.js",
+    "dev": "npm run build &&  npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "cross-spawn": "^7.0.3",
+    "figlet": "^1.6.0",
+    "npm": "^9.8.1"
+  },
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.2",
+    "@types/figlet": "^1.5.6",
+    "@types/node": "^20.4.10",
+    "typescript": "^5.0.4"
+  }
+}
